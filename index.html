@@ -1,13 +1,113 @@
 <!DOCTYPE html> 
 <html lang="en"> 
 	<head> 
-		<title>LASTNAME Chapter8-9HandsOnExercise</title> 
+		<title>Fares Chapter8-9HandsOnExercise</title> 
 		<meta charset="utf-8"> 
 		<style>
-		
+		  
 		</style>
 	</head> 
 <body> 
-
+    <h1>Favorite Movie</h1>
+    <table>
+        <caption>This is my favorite movie and some information about it.</caption>
+        <tbody>
+            <tr>
+                <th id="title">Title:</th>
+                <td id="title">The Hunger Games</td>
+            </tr>
+            <tr>
+                <th id="director">Director:</th>
+                <td id="director">Gary Ross</td>
+            </tr>
+            <tr>
+                <th id="leadactor">Leading Actor:</th>
+                <td id="leadactor">Josh Hutcherson</td>
+            </tr>
+            <tr>
+                <th id="leadactress">Leading Actress:</th>
+                <td id="leadactress">Jennifer Lawrence</td>
+            </tr>
+            <tr>
+                <th id="rating">Rating:</th>
+                <td id="rating">PG-13</td>
+            </tr>
+            <tr>
+                <th id="description">Description:</th>
+                <td id="description">This movie is based on the popular book "The Hunger Games" by Suzanne Collins. Katniss Everdeen of District 12 takes her sister's place in the Hunger Games: a yearly competition where 24 teenagers (two from each District) fight to the death until only one remains as the victor.</td>
+            </tr>
+            <tr>
+                <th id="review">Review:</th>      
+                <td id="review">Reviews of this movie can be found on Rotten Tomatoes by clicking <a href="https://www.rottentomatoes.com/m/the_hunger_games">HERE</a>.</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <h1>Music Survey</h1>
+    <p>Required Fields marked with an asterisk *</p>
+    <form method="post" action="http://webdevbasics.net/scripts/demo.php">
+        <div>
+            <fieldset id="user">
+                <label for="myName">*Name:</label>
+                <input type="text" name="myName" id="myName" required="required" placeholder="Your first and last name">
+                
+                <label for="myEmail">*E-mail:</label>
+                <input type="email" name="myEmail" id="myEmail" required="required" placeholder="you@yourdomain.com">
+            </fieldset>
+            
+            <fieldset id="music">
+                <legend>Music Preferences</legend>
+                Select the music genre you like the most:<br>
+                <input type="radio" name="myPref" id="pop" value="Pop">Pop<br>
+                <input type="radio" name="myPref" id="punk" value="Punk">Punk<br>
+                <input type="radio" name="myPref" id="rock" value="Rock">Rock<br>
+                <input type="radio" name="myPref" id="latin" value="Latin">Latin<br>
+                <input type="radio" name="myPref" id="kjpop" value="K-Pop or J-Pop">K-Pop / J-Pop<br>
+                <input type="radio" name="myPref" id="alt" value="Alternative">Alternative<br>
+                <input type="radio" name="myPref" id="funk" value="Funk">Funk<br>
+                <input type="radio" name="myPref" id="theater" value="Musical Theater">Musical Theater<br>
+                <input type="radio" name="myPref" id="classical" value="Classical">Classical<br>
+                <input type="radio" name="myPref" id="metal" value="Metal">Metal<br>
+                <input type="radio" name="myPref" id="country" value="Country">Country<br>
+                <input type="radio" name="myPref" id="rnb" value="Rhythm and Blues">Rhythm and Blues<br>
+                <input type="radio" name="myPref" id="rap" value="Rap">Rap<br>
+                <input type="radio" name="myPref" id="other" value="Other">Other<br><br>
+                
+                Select the music genre(s) you are not a fan of:<br>
+                <input type="checkbox" name="myDislike" id="pop" value="Pop">Pop<br>
+                <input type="checkbox" name="myDislike" id="punk" value="Punk">Punk<br>
+                <input type="checkbox" name="myDislike" id="rock" value="Rock">Rock<br>
+                <input type="checkbox" name="myDislike" id="latin" value="Latin">Latin<br>
+                <input type="checkbox" name="myDislike" id="kjpop" value="K-Pop or J-Pop">K-Pop / J-Pop<br>
+                <input type="checkbox" name="myDislike" id="alt" value="Alternative">Alternative<br>
+                <input type="checkbox" name="myDislike" id="funk" value="Funk">Funk<br>
+                <input type="checkbox" name="myDislike" id="theater" value="Musical Theater">Musical Theater<br>
+                <input type="checkbox" name="myDislike" id="classical" value="Classical">Classical<br>
+                <input type="checkbox" name="myDislike" id="metal" value="Metal">Metal<br>
+                <input type="checkbox" name="myDislike" id="country" value="Country">Country<br>
+                <input type="checkbox" name="myDislike" id="rnb" value="Rhythm and Blues">Rhythm and Blues<br>
+                <input type="checkbox" name="myDislike" id="rap" value="Rap">Rap<br>
+                <input type="checkbox" name="myDislike" id="other" value="Other">Other<br>
+            </fieldset>
+            
+            <fieldset id="mySong">
+                <legend></legend>
+                <label for="myComments">*Comments</label>
+                <textarea name="myComments" id="myComments" rows="2" cols="20" required="required"></textarea>
+                
+                <label>How long have you liked your favorite song?:</label>
+                    <select size="3" name="favorite" id="favorite">
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                        <option value="Yes">Yes</option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                
+                <input id="mySubmit" type="submit" value="Submit">
+                <input id="myReset" type="reset" value="Reset">
+            </fieldset>
+        </div>
+    </form>
 </body> 
 </html> 
